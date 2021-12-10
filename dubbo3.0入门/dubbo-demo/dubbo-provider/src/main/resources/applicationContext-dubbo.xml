@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+            http://dubbo.apache.org/schema/dubbo
+            http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供方应用信息，用于计算依赖关系,name可以随便起名，但是不能重复 -->
+    <dubbo:application name="hello-dubbo-provider"/>
+
+    <!-- 使用zookeeper为注册中心，客户端使用curator -->
+    <dubbo:registry address="zookeeper://localhost:2181" client="curator"/>
+
+    <!-- 对外提供一个producerService的服务，服务对应的实现 ref="iProducerService" -->
+    <dubbo:service id="producerService"
+                   interface="com.example.dubbo.service.HelloService" ref="iProducerService"/>
+
+    <bean id="iProducerService" class="com.example.dubbo.provider.impl.HelloServiceImpl"/>
+</beans>
