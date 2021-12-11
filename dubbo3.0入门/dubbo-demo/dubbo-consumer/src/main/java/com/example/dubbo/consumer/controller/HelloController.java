@@ -5,10 +5,7 @@ import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @Date 2021/11/17
- * @Created by wangxw257@chinaunicom.cn
- */
+
 @RestController
 public class HelloController {
     @DubboReference
