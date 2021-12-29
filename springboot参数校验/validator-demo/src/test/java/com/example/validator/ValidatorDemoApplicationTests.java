@@ -16,9 +16,6 @@ class ValidatorDemoApplicationTests {
     @Autowired
     Validator validator;
 
-    @Region
-    private String region;
-
     @Test
     void validator1() {
         PersonRequest personRequest = PersonRequest.builder().sex("Man22")
@@ -28,7 +25,4 @@ class ValidatorDemoApplicationTests {
         violations.forEach(constraintViolation -> System.out.println(constraintViolation.getMessage()));
     }
 
-    @Test
-    void validator2() {
-    }
 }
