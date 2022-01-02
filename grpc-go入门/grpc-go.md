@@ -2,7 +2,7 @@
 
 下载地址：https://github.com/google/protobuf/releases
 
-将编译器地址加入到PATH环境变量中。
+将编译器目录加入到PATH环境变量中。
 
 ## 安装protocol buffer的go插件到本地
 
@@ -148,3 +148,7 @@ Greeting: Hello world
 ```
 
 即ok!
+
+## 参考
+
+https://www.grpc.io/docs/languages/go/quickstart/
