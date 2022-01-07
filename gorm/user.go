@@ -17,6 +17,7 @@ type User struct {
 	UpdatedAt    time.Time
 }
 
+// TableName 自定义表名
 func (u User) TableName() string {
 	return "user"
 }
