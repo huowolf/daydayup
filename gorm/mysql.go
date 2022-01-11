@@ -5,6 +5,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
+	"gorm.io/gorm/schema"
 	"log"
 	"os"
 	"time"
@@ -27,8 +28,13 @@ func InitDB()  {
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		"root", "root", "localhost", 3306, "gorm")
+
 	db, err := gorm.Open(mysql.Open(dsn),&gorm.Config{
 		Logger: newLogger,
+		NamingStrategy: schema.NamingStrategy{
+			//TablePrefix: "t_",   // 表名前缀，`User`表为`t_users`
+			SingularTable: true, // 使用单数表名，启用该选项后，`User` 表将是`user`
+		},
 	})
 
 	if err != nil {
