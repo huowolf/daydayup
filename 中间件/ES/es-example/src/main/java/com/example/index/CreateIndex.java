@@ -1,4 +1,4 @@
-package com.example;
+package com.example.index;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RequestOptions;
@@ -20,7 +20,7 @@ public class CreateIndex {
                 RestClient.builder(new HttpHost("localhost", 9200, "http")));
 
         // 创建索引 - 请求对象
-        CreateIndexRequest request = new CreateIndexRequest("user2");
+        CreateIndexRequest request = new CreateIndexRequest("user");
         // 发送请求，获取响应
         CreateIndexResponse response = client.indices().create(request,
                 RequestOptions.DEFAULT);

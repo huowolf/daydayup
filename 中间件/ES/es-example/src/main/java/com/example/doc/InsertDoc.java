@@ -1,5 +1,7 @@
-package com.example;
+package com.example.doc;
 
+import com.example.ConnectElasticsearch;
+import com.example.entity.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
