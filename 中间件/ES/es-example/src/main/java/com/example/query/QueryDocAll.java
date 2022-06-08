@@ -9,7 +9,10 @@ import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 
-public class QueryDoc {
+/**
+ * 查询所有
+ */
+public class QueryDocAll {
 
     public static void main(String[] args) {
         ConnectElasticsearch.connect(client -> {
