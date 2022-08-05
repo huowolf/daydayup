@@ -1,0 +1,186 @@
+Hadoop	Storm
+Hive	Flink	Storm	Spark
+Spark	Hive	Storm	Hadoop	Flink	HBase
+HBase	Storm
+Flink	Spark
+Storm	Flink	Spark	Hadoop	HBase	Hive
+Hadoop	Storm
+Storm	Hive
+Storm	Hive	Spark	Flink	HBase	Hadoop
+Hadoop	Flink	Hive	Spark
+Hive	Storm
+Flink
+Storm	Spark	Flink	Hive	HBase	Hadoop
+Storm	Spark	Hive	Flink	HBase	Hadoop
+HBase	Hive	Spark	Storm	Flink	Hadoop
+Spark	Hive
+Hadoop	Storm	HBase
+HBase	Flink	Hive	Spark
+Flink	Hive	Hadoop	HBase
+Hadoop
+HBase	Hadoop	Spark	Storm	Hive	Flink
+Hadoop	Spark	Storm
+Hive
+Hive
+HBase
+Storm	Flink	Hadoop	HBase	Hive
+Flink	Hadoop	Spark	HBase	Hive
+Flink	Hive	Spark	HBase
+Hadoop	Hive	Flink
+Hive	Hadoop	HBase	Storm
+Hive
+HBase	Spark
+HBase	Hadoop	Storm
+Storm	Spark	Flink	Hive	Hadoop	HBase
+Flink	HBase	Spark	Storm	Hadoop	Hive
+Storm	HBase	Spark	Hive	Flink	Hadoop
+Flink	HBase
+HBase
+HBase	Storm	Flink	Hive
+HBase	Storm	Flink	Hadoop
+Flink	Spark	Hadoop	HBase
+Flink	Spark
+Hadoop
+Flink	Storm	HBase	Hive
+Hadoop
+Hadoop	Flink	Spark	Storm	HBase
+HBase	Hive
+Spark	Hive	Flink	Hadoop
+Hadoop	Spark	HBase	Hive	Storm	Flink
+Spark	Hive	Hadoop	HBase	Flink
+Storm	HBase	Spark
+Spark	HBase
+Hadoop	HBase	Hive	Spark
+Spark	Hadoop	Flink	Hive
+Flink	Hadoop	Spark
+Spark	Hive	HBase
+HBase	Hive	Hadoop	Flink	Spark
+HBase	Hive
+Storm	Hadoop	Flink	Spark	Hive	HBase
+Hive	Storm	Spark
+HBase	Hadoop	Flink
+Hive	Flink	Hadoop
+Storm	Spark	Hive	Hadoop
+Hive	Storm
+Hive
+HBase	Flink	Storm
+Storm	Hive	HBase	Flink
+HBase
+Hive	Flink	HBase
+Hadoop	Hive	Storm
+Hive
+Hadoop	Storm	Hive	Spark
+Flink	Spark	Storm	HBase	Hive	Hadoop
+Storm	Hive	Spark	HBase	Hadoop	Flink
+Spark	Hadoop	Hive
+Spark
+HBase	Hive	Flink	Storm	Hadoop	Spark
+Flink
+Spark	Hive	Storm
+Flink	Hadoop
+Flink	Hive	Hadoop	HBase	Storm
+Hadoop	HBase	Spark	Storm
+Flink	Hive	HBase
+Hadoop	Storm	HBase
+Storm	Flink	HBase	Hadoop	Spark
+Spark	Hive	Flink	Hadoop
+Hive	Spark	Flink
+HBase	Spark	Storm	Hadoop
+Spark	Hadoop	HBase	Flink	Hive	Storm
+Flink	Spark	HBase	Storm
+Flink	Storm	HBase	Hive	Hadoop	Spark
+Flink	HBase
+Hadoop	Hive	HBase	Flink	Storm	Spark
+Spark	HBase
+HBase	Hive	Hadoop	Storm	Spark
+HBase
+Storm	Hadoop	Spark	HBase	Hive
+HBase	Hive	Hadoop	Spark	Flink	Storm
+Storm
+Spark
+HBase	Hive	Flink	Spark
+Spark	Flink	Hive
+Storm
+Hive	Hadoop	HBase	Storm	Spark	Flink
+HBase	Hadoop	Flink	Spark
+Spark	Flink	HBase
+Spark
+Spark	HBase	Storm
+Flink
+HBase	Storm	Hadoop	Spark
+HBase	Storm	Spark	Flink	Hadoop	Hive
+Hadoop	Storm	Hive	Spark
+Storm	Spark
+HBase	Spark
+Storm	Spark	HBase	Flink
+Flink
+HBase	Hadoop
+Storm	HBase	Hive	Spark
+Hadoop
+Hive	Storm	HBase	Spark	Flink	Hadoop
+HBase	Storm
+Hive	HBase	Hadoop	Flink	Storm	Spark
+HBase
+Flink
+Hadoop	HBase	Flink	Hive	Storm
+Hive	Storm	HBase	Flink	Spark	Hadoop
+Spark	Storm
+Hadoop	Spark	Hive	Flink	HBase
+Spark	Flink	HBase	Storm	Hive	Hadoop
+Spark	Hadoop	Hive	Storm	Flink	HBase
+HBase	Hive	Flink	Hadoop	Spark	Storm
+Storm	HBase
+HBase
+HBase
+Spark
+Spark	Storm	Hive	HBase	Flink
+Spark	Flink	Hadoop	Storm	HBase	Hive
+HBase	Hive
+Storm	HBase	Spark	Hive
+Storm	Hadoop	HBase	Flink	Spark
+Storm	HBase	Hadoop
+HBase	Storm
+Flink
+Storm
+Hive	Hadoop	Storm	Flink
+Flink
+Storm	Spark
+Storm	Hive	Spark	HBase
+Hive	Storm	Hadoop
+Storm	Flink	Hadoop	Spark	HBase
+Hadoop
+Spark	Hadoop	HBase	Storm	Hive	Flink
+Spark	Hadoop	Storm	Flink
+Flink	Storm	Spark	HBase	Hive
+Storm	HBase	Flink
+Storm	Spark	Flink	HBase	Hadoop	Hive
+Hadoop
+Storm	Flink	Hive	Spark
+Storm	HBase	Hive	Hadoop
+Storm	Hive	Spark	HBase	Hadoop	Flink
+Flink	Hive	Hadoop	HBase	Storm	Spark
+Hadoop	HBase	Spark	Flink	Storm
+HBase	Hive
+Hadoop
+Spark
+Hive	Spark	HBase	Flink	Storm
+Hive	Storm	HBase	Flink
+Hadoop	Spark	Hive	Storm	Flink	HBase
+HBase	Hive	Flink
+Hive	Flink	HBase
+Hive	HBase	Flink	Spark	Storm	Hadoop
+Hadoop	Hive	Spark	Flink	Storm	HBase
+Hive	Flink	Spark
+HBase	Hive	Flink
+HBase	Flink	Spark	Hive	Hadoop
+Spark	Storm	Hive	Flink	HBase
+Hive	Hadoop	HBase	Flink	Storm
+Flink	Hive	Spark	HBase	Hadoop
+Hive	Spark	Flink	Hadoop
+HBase	Hadoop
+HBase	Storm	Flink	Spark	Hive	Hadoop
+Storm	Flink	Hive	HBase	Spark
+Storm
+Storm	Hadoop	HBase	Spark	Hive
+Storm	Hadoop	Spark	Hive
+Hadoop	Spark	Hive	Flink	HBase
