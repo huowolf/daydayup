@@ -5,18 +5,18 @@ object WordCount {
   def main(args: Array[String]): Unit = {
     // 创建 Spark 运行配置对象
     val sparkConf = new SparkConf()
-        .setMaster("spark://192.168.93.131:7077")
+        .setMaster("local[*]")
         .setAppName("WordCount")
-        .setJars(Array[String]("E:\\my-code\\spark-example\\target\\spark-example-1.0-SNAPSHOT-jar-with-dependencies.jar"))
+        //.setJars(Array[String]("E:\\my-code\\spark-example\\target\\spark-example-1.0-SNAPSHOT-jar-with-dependencies.jar"))
 
     // 创建 Spark 上下文环境对象（连接对象）
     val sc : SparkContext = new SparkContext(sparkConf)
 
     // 读取文件数据
-    val fileRDD = sc.textFile("file:///opt/input/input.txt")
+    val fileRDD = sc.textFile("file:///E:\\my-code\\spark-example\\input\\word.txt")
 
     // 将文件中的数据进行分词
-    val wordRDD = fileRDD.flatMap( _.split(" ") )
+    val wordRDD = fileRDD.flatMap( _.split("\t") )
 
     // 转换数据结构 word => (word, 1)
     val word2OneRDD = wordRDD.map((_,1))
