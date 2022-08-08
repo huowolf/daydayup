@@ -26,9 +26,14 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.12</artifactId>
             <version>3.3.0</version>
-            <scope>provided</scope>
+<!--        <scope>provided</scope>-->
         </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
 
     </dependencies>
     <build>
