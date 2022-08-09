@@ -1,3 +1,5 @@
+package mysql
+
 import org.apache.spark.sql.{SaveMode, SparkSession}
 
 import java.util.Properties

@@ -19,14 +19,14 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.12</artifactId>
             <version>3.3.0</version>
-<!--            <scope>provided</scope>-->
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.12</artifactId>
             <version>3.3.0</version>
-<!--        <scope>provided</scope>-->
+        <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -37,6 +37,7 @@
 
     </dependencies>
     <build>
+<!--        <sourceDirectory>src/main/scala</sourceDirectory>-->
         <plugins>
             <!-- 该插件用于将 Scala 代码编译成 class 文件 -->
             <plugin>
@@ -45,8 +46,18 @@
                 <version>3.2.2</version>
                 <executions>
                     <execution>
-                        <!-- 声明绑定到 maven 的 compile 阶段 -->
+                        <id>scala-compile-first</id>
+                        <phase>process-resources</phase>
                         <goals>
+                            <goal>add-source</goal>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
                             <goal>testCompile</goal>
                         </goals>
                     </execution>
